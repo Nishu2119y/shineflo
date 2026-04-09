@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Shineflo – Home Hardware Essentials</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+
+
+<!-- Mobile Navigation Drawer -->
+<div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMenu()">×</button>
+  <div class="logo-wrap" style="margin-bottom: 2rem;">
+    <div class="logo-mark">S</div>
+    <span class="logo-text">Shine<span>flo</span></span>
+  </div>
+  <ul class="mob-nav-links">
+    <li><a href="#" id="mob-nav-home" class="active" onclick="showPage('home');return false;">Home</a></li>
+    <li><a href="#" id="mob-nav-products" onclick="showPage('products');return false;">Products</a></li>
+    <li><a href="#" onclick="return false;">Brands</a></li>
+    <li><a href="#" id="mob-nav-contact" onclick="showPage('contact');return false;">Contact</a></li>
+  </ul>
+  <div class="nav-right" style="flex-direction: column; align-items: flex-start; margin-top: auto; gap: 1rem;">
+    <a class="nav-phone" href="tel:+916200283002" style="font-size: 1rem;">📞 +91 6200-283002</a>
+    <button class="btn-nav" onclick="showPage('contact')" style="width: 100%;">Get a Quote</button>
+  </div>
+</div>
+
+<!-- Main Top Navigation -->
+<nav id="mainNav">
+  <a class="logo-wrap" href="#" onclick="showPage('home');return false;">
+    <div class="logo-mark">S</div>
+    <span class="logo-text">Shine<span>flo</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" id="nav-home" class="active" onclick="showPage('home');return false;">Home</a></li>
+    <li><a href="#" id="nav-products" onclick="showPage('products');return false;">Products</a></li>
+    <li><a href="#" onclick="return false;">Brands</a></li>
+    <li><a href="#" id="nav-contact" onclick="showPage('contact');return false;">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a class="nav-phone" href="tel:+916200283002">📞 +91 6200-283002</a>
+    <button class="btn-nav" onclick="showPage('contact')">Get a Quote</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+<!-- HOME PAGE -->
+<div class="page active" id="page-home">
+  <section class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-tag">Trusted Since 2009</div>
+        <h1 class="hero-h">Quality Hardware<br><span class="flow">That Flows Right.</span></h1>
+        <p class="hero-sub">Premium water tanks, pipes, tapes, fittings and all essential home hardware — everything you need under one roof, delivered fast.</p>
+        <div class="hero-btns">
+          <a href="#" class="btn-primary" onclick="showPage('products');return false;">Shop Now</a>
+          <a href="#" class="btn-outline" onclick="showPage('contact');return false;">Get a Quote</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="hstat-n">5K+</div><div class="hstat-l">Products</div></div>
+          <div><div class="hstat-n">12K+</div><div class="hstat-l">Happy Clients</div></div>
+          <div><div class="hstat-n">15+</div><div class="hstat-l">Years Trusted</div></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="vc-badge">✦ ISO Certified</div>
+        <div class="visual-card">
+          <div class="vc-item"><div class="vc-icon">🛢️</div><div class="vc-label">Water Tanks</div><div class="vc-sub">500L – 10,000L</div></div>
+          <div class="vc-item"><div class="vc-icon">🔧</div><div class="vc-label">Pipe Fittings</div><div class="vc-sub">PVC · CPVC · GI</div></div>
+          <div class="vc-item"><div class="vc-icon">🧲</div><div class="vc-label">Sealing Tapes</div><div class="vc-sub">PTFE · Duct · Foam</div></div>
+          <div class="vc-item"><div class="vc-icon">🚰</div><div class="vc-label">Valves & Taps</div><div class="vc-sub">Brass · SS · PVC</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="marquee-track">
+      <span class="mq-item">Water Tanks</span><span class="mq-item">PVC Pipes</span><span class="mq-item">CPVC Fittings</span><span class="mq-item">PTFE Tape</span><span class="mq-item">Ball Valves</span><span class="mq-item">Elbow Joints</span><span class="mq-item">Gate Valves</span><span class="mq-item">Pressure Gauges</span><span class="mq-item">Plumbing Tools</span><span class="mq-item">Reducer Couplings</span>
+      <span class="mq-item">Water Tanks</span><span class="mq-item">PVC Pipes</span><span class="mq-item">CPVC Fittings</span><span class="mq-item">PTFE Tape</span><span class="mq-item">Ball Valves</span><span class="mq-item">Elbow Joints</span><span class="mq-item">Gate Valves</span><span class="mq-item">Pressure Gauges</span><span class="mq-item">Plumbing Tools</span><span class="mq-item">Reducer Couplings</span>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-header reveal">
+      <div><div class="eyebrow">Browse by Category</div><h2 class="sec-title">Everything Under<br>One Roof</h2></div>
+      <a href="#" class="see-all" onclick="showPage('products');return false;">View All →</a>
+    </div>
+    <div class="cat-grid reveal">
+      <a href="#" class="cat-card" onclick="showPage('products');return false;"><span class="cat-ico">🛢️</span><div class="cat-n">Water Tanks</div><div class="cat-c">48 Products</div></a>
+      <a href="#" class="cat-card" onclick="showPage('products');return false;"><span class="cat-ico">🔩</span><div class="cat-n">Pipes & Fittings</div><div class="cat-c">320 Products</div></a>
+      <a href="#" class="cat-card" onclick="showPage('products');return false;"><span class="cat-ico">🧲</span><div class="cat-n">Tapes & Sealants</div><div class="cat-c">95 Products</div></a>
+      <a href="#" class="cat-card" onclick="showPage('products');return false;"><span class="cat-ico">🚰</span><div class="cat-n">Valves & Taps</div><div class="cat-c">140 Products</div></a>
+      <a href="#" class="cat-card" onclick="showPage('products');return false;"><span class="cat-ico">🔨</span><div class="cat-n">Tools & Equipment</div><div class="cat-c">210 Products</div></a>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="why-grid">
+      <div class="reveal">
+        <div class="eyebrow">Why Shineflo</div>
+        <h2 class="sec-title">Hardware You Can<br>Actually Trust</h2>
+        <p class="sec-body">From a leaky tap to a full plumbing installation — we stock everything a homeowner or contractor needs, with quality built to last decades.</p>
+        <div class="feat-list">
+          <div class="feat-row"><div class="feat-ico">🏆</div><div><div class="feat-title">Premium Brands</div><div class="feat-txt">Sourced from certified manufacturers across India and globally.</div></div></div>
+          <div class="feat-row"><div class="feat-ico">🚚</div><div><div class="feat-title">Fast Delivery</div><div class="feat-txt">Same-day dispatch on all in-stock items, anywhere in India.</div></div></div>
+          <div class="feat-row"><div class="feat-ico">💬</div><div><div class="feat-title">Expert Advice</div><div class="feat-txt">Our specialists help you choose exactly the right product.</div></div></div>
+          <div class="feat-row"><div class="feat-ico">🔄</div><div><div class="feat-title">Easy Returns</div><div class="feat-txt">Hassle-free 30-day return policy on every single product.</div></div></div>
+        </div>
+      </div>
+      <div class="why-right reveal">
+        <div class="stats-box">
+          <div class="sb-item sb-big"><div class="sb-num">15+</div><div class="sb-lbl" style="color:rgba(255,255,255,.6);">Years of Hardware Excellence</div></div>
+          <div class="sb-item"><div class="sb-num">240+</div><div class="sb-lbl">Brands</div></div>
+          <div class="sb-item"><div class="sb-num">98%</div><div class="sb-lbl">Satisfaction</div></div>
+          <div class="sb-item"><div class="sb-num">5K+</div><div class="sb-lbl">Products</div></div>
+          <div class="sb-item"><div class="sb-num">12K+</div><div class="sb-lbl">Clients Served</div></div>
+        </div>
+        <div class="float-badge"><div class="fb-n">ISO</div><div class="fb-t">Certified<br>Supplier</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header reveal">
+      <div><div class="eyebrow">Featured Products</div><h2 class="sec-title">Hand Tools<br>Collection</h2></div>
+    </div>
+    <div class="tools-grid reveal">
+      <div class="tool-card">
+        <div class="tool-img-wrap">
+          <img src="public/tank.jpeg" alt="Water Tank" class="tool-img">
+        </div>
+        <div class="tool-body">
+          <h3 class="tool-name">Water Tank</h3>
+          <p class="tool-desc">Premium quality water storage tanks available in multiple capacities from 500L to 10,000L. Durable and UV resistant.</p>
+        </div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-img-wrap">
+          <img src="public/pipe.jpeg" alt="PVC Pipe" class="tool-img">
+        </div>
+        <div class="tool-body">
+          <h3 class="tool-name">PVC Pipe</h3>
+          <p class="tool-desc">High-grade PVC pipes for plumbing and water supply. Available in various sizes with superior strength and longevity.</p>
+        </div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-img-wrap">
+          <img src="public/motor.jpeg" alt="Water Motor" class="tool-img">
+        </div>
+        <div class="tool-body">
+          <h3 class="tool-name">Water Motor</h3>
+          <p class="tool-desc">Efficient water pumps and motors for residential and commercial use. Energy-saving with powerful performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extracted Footer to bottom to avoid duplication -->
+
+</div>
+
+<!-- PRODUCTS PAGE -->
+<div class="page" id="page-products">
+  <div class="page-header">
+    <h1>All Hardware</h1>
+    <p>Browse our exhaustive catalog of Premium Hand Tools, Fittings, Measurements and Safety Equipment for everyday & industrial use.</p>
+  </div>
+  
+  <div class="products-container">
+    <aside class="filters-sidebar reveal">
+      <h3>Filters</h3>
+      <div class="filter-group">
+        <h4>Availability</h4>
+        <div class="filter-options">
+          <label><input type="checkbox" checked/> In stock (256)</label>
+          <label><input type="checkbox"/> Out of stock (265)</label>
+        </div>
+      </div>
+      <div class="filter-group">
+        <h4>Categories</h4>
+        <div class="filter-options">
+          <label><input type="checkbox" checked/> Hand Tools</label>
+          <label><input type="checkbox"/> Power Machines</label>
+          <label><input type="checkbox"/> Safety Equipment</label>
+          <label><input type="checkbox"/> Drill Bits</label>
+          <label><input type="checkbox"/> Hardware Accessories</label>
+          <label><input type="checkbox"/> Measuring Tools</label>
+          <label><input type="checkbox"/> Fasteners</label>
+        </div>
+      </div>
+      <div class="filter-group">
+        <h4>Brands</h4>
+        <div class="filter-options">
+          <label><input type="checkbox"/> Stanley</label>
+          <label><input type="checkbox"/> Taparia</label>
+          <label><input type="checkbox"/> Bosch</label>
+          <label><input type="checkbox"/> Black + Decker</label>
+        </div>
+      </div>
+    </aside>
+    
+    <main class="products-main reveal">
+      <div class="prod-toolbar">
+         <span>Showing 1 – 6 of 458 products</span>
+         <select>
+           <option>Sort by: Featured</option>
+           <option>Price: Low to High</option>
+           <option>Price: High to Low</option>
+           <option>Name: A-Z</option>
+         </select>
+      </div>
+
+      <div class="prod-grid full-grid">
+        
+        <div class="p-card">
+          <div class="p-img">🪚<div class="p-badge-wrap"><span class="p-badge sale-b">-10% Off</span></div></div>
+          <div class="p-body">
+            <div class="p-n">Stanley: 0-15-218 Mini Hacksaw Frame</div>
+            <div class="p-d">Junior 6 inch frame for precision cuts in tight spaces. Blade included.</div>
+            <div class="p-ft">
+              <div class="p-pr">₹320 <strike>₹355</strike></div>
+              <button class="p-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-card">
+          <div class="p-img">🔧</div>
+          <div class="p-body">
+            <div class="p-n">Generic: Wire Nipper Plier</div>
+            <div class="p-d">High carbon steel nipper plier suitable for cutting copper & aluminum wires.</div>
+            <div class="p-ft">
+              <div class="p-pr">₹150</div>
+              <button class="p-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-card">
+          <div class="p-img">🔩</div>
+          <div class="p-body">
+            <div class="p-n">Plastic Washer 5mm (Pack of 50)</div>
+            <div class="p-d">Durable nylon polymer washers for sealing and spacing tasks.</div>
+            <div class="p-ft">
+              <div class="p-pr">₹65</div>
+              <button class="p-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-card">
+          <div class="p-img">🧲<div class="p-badge-wrap"><span class="p-badge new-b">New</span></div></div>
+          <div class="p-body">
+            <div class="p-n">Deep Grove Ball Bearing</div>
+            <div class="p-d">Precision 608zz ball bearing for rotational parts and machinery loops.</div>
+            <div class="p-ft">
+              <div class="p-pr">₹45</div>
+              <button class="p-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-card">
+          <div class="p-img">📏</div>
+          <div class="p-body">
+            <div class="p-n">Digital Vernier Caliper 150mm</div>
+            <div class="p-d">Generic aluminium body caliper with rectangular case and large LCD.</div>
+            <div class="p-ft">
+              <div class="p-pr">₹890</div>
+              <button class="p-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-card">
+          <div class="p-img">🪖<div class="p-badge-wrap"><span class="p-badge">Best Seller</span></div></div>
+          <div class="p-body">
+            <div class="p-n">Industrial Safety Helmet</div>
+            <div class="p-d">Heavy-grade yellow ABS safety helmet. Adjustable inner harness.</div>
+            <div class="p-ft">
+              <div class="p-pr">₹299</div>
+              <button class="p-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Placeholder simple pagination -->
+      <div style="display: flex; gap: .5rem; justify-content: center; margin-top: 3rem;">
+        <button class="p-btn" style="background:var(--teal); color:white;">1</button>
+        <button class="p-btn">2</button>
+        <button class="p-btn">3</button>
+        <button class="p-btn">Next →</button>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- CONTACT PAGE -->
+<div class="page" id="page-contact">
+  <section class="contact-hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="ch-inner">
+      <div class="eyebrow">We'd love to hear from you</div>
+      <h1 class="ch-h">Get In <span>Touch</span><br>With Us</h1>
+      <p class="ch-sub">Have a question, need a quote, or want expert advice? Our team is ready to help you with every hardware need.</p>
+    </div>
+  </section>
+
+  <div class="contact-body">
+    <div class="ci-panel reveal">
+      <div class="eyebrow">Contact Information</div>
+      <h2 class="sec-title">Let's Build<br>Something Together</h2>
+      <p>Whether you're a homeowner tackling a DIY project or a contractor managing a large build — we're here to help. Reach us any way you like.</p>
+      <div class="ci-cards">
+        <div class="ci-card"><div class="ci-ico">📍</div><div><div class="ci-label">Our Store</div><div class="ci-value">5GV3+R74, Ekangar Rd,<br>Devisarai, Bihar Sharif, Bihar 803216</div></div></div>
+        <div class="ci-card"><div class="ci-ico">📞</div><div><div class="ci-label">Call Us</div><div class="ci-value">+91 6200-283002</div></div></div>
+        <div class="ci-card"><div class="ci-ico">✉️</div><div><div class="ci-label">Email Us</div><div class="ci-value">ramexverma@gmail.com</div></div></div>
+        <div class="ci-card"><div class="ci-ico">🕐</div><div><div class="ci-label">Store Hours</div><div class="ci-value">Mon – Sat: 9:00 AM – 7:00 PM<br>Sunday: 10:00 AM – 4:00 PM</div></div></div>
+      </div>
+      <div class="ci-socials">
+        <div class="ci-soc">𝕏</div><div class="ci-soc">in</div><div class="ci-soc">f</div><div class="ci-soc">📸</div><div class="ci-soc">▶</div>
+      </div>
+    </div>
+
+    <!-- Contact Form with Accessibility improvements -->
+    <form class="cf-wrap reveal" onsubmit="handleSubmit(this.querySelector('button'), event)">
+      <div class="cf-title">Send Us a Message</div>
+      <div class="cf-sub">Fill in the form below and we'll get back to you within 24 hours.</div>
+      <div class="form-row">
+        <div class="form-group"><label for="fName">First Name</label><input type="text" id="fName" placeholder="Rajesh" required/></div>
+        <div class="form-group"><label for="lName">Last Name</label><input type="text" id="lName" placeholder="Verma"/></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="rajesh@email.com" required/></div>
+        <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" placeholder="+91 99999 99999"/></div>
+      </div>
+      <div class="form-group">
+        <label for="interest">I'm interested in</label>
+        <select id="interest" required>
+          <option value="">Select a category...</option>
+          <option value="Water Tanks">Water Tanks</option>
+          <option value="Hand Tools">Hand Tools</option>
+          <option value="Measuring Equipment">Measuring Equipment</option>
+          <option value="Valves & Taps">Valves & Taps</option>
+          <option value="General Inquiry">General Inquiry</option>
+          <option value="Bulk Order">Bulk / Contractor Order</option>
+        </select>
+      </div>
+      <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" placeholder="How can we help you?" required/></div>
+      <div class="form-group"><label for="message">Message</label><textarea id="message" placeholder="Tell us about your project or requirement. The more detail, the better we can help you…" required></textarea></div>
+      <div class="form-check">
+        <input type="checkbox" id="agree" required/>
+        <label for="agree">I agree to Shineflo's <a href="#">Privacy Policy</a> and consent to being contacted about my enquiry.</label>
+      </div>
+      <button type="submit" class="btn-submit">Send Message →</button>
+      <p class="submit-note">🔒 Your information is safe and will never be shared.</p>
+    </form>
+  </div>
+
+  <div class="map-strip">
+    <div class="map-placeholder">
+      <div class="map-pin">📍</div>
+      <div class="map-label">Shineflo Hardware Store</div>
+      <div class="map-sub">5GV3+R74, Ekangar Rd, Devisarai, Bihar Sharif, Bihar 803216</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="ft-top">
+    <div class="ft-brand"><span class="logo-text">Shine<span>flo</span></span><p class="ft-tag">Your trusted partner for home hardware, plumbing, and water solutions since 2009.</p></div>
+    <div class="ft-col"><h4>Products</h4><ul><li><a href="#" onclick="showPage('products');return false;">Hand Tools</a></li><li><a href="#" onclick="showPage('products');return false;">Power Machines</a></li><li><a href="#" onclick="showPage('products');return false;">Measurements</a></li><li><a href="#" onclick="showPage('products');return false;">Valves & Taps</a></li><li><a href="#" onclick="showPage('products');return false;">Accessories</a></li></ul></div>
+    <div class="ft-col"><h4>Company</h4><ul><li><a href="#" onclick="return false;">About Us</a></li><li><a href="#" onclick="return false;">Careers</a></li><li><a href="#" onclick="return false;">Blog</a></li></ul></div>
+    <div class="ft-col"><h4>Support</h4><ul><li><a href="#" onclick="showPage('contact');return false;">Contact Us</a></li><li><a href="#" onclick="return false;">Shipping Policy</a></li><li><a href="#" onclick="return false;">Returns</a></li><li><a href="#" onclick="return false;">FAQ</a></li></ul></div>
+  </div>
+  <div class="ft-bottom">
+    <span class="ft-copy">© 2026 Shineflo Hardware. All rights reserved.</span>
+    <div class="ft-soc"><div class="soc-btn">𝕏</div><div class="soc-btn">in</div><div class="soc-btn">f</div><div class="soc-btn">📸</div></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

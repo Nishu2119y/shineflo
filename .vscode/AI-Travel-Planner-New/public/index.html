@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>✈️ AI Travel Planner</h1>
+      <p>Plan your perfect trip with AI assistance</p>
+    </header>
+
+    <!-- Form Section -->
+    <div class="form-section" id="formSection">
+      <form id="travelForm">
+        <div class="form-group">
+          <label for="destination">🌍 Destination</label>
+          <input type="text" id="destination" placeholder="e.g., Paris, Tokyo, New York" required>
+        </div>
+
+        <div class="form-group">
+          <label for="days">📅 Number of Days</label>
+          <input type="number" id="days" min="1" max="30" placeholder="e.g., 5" required>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">💰 Budget</label>
+          <input type="text" id="budget" placeholder="e.g., $2000, ₹50000, €1500" required>
+        </div>
+
+        <div class="form-group">
+          <label for="interests">🎯 Interests</label>
+          <input type="text" id="interests" placeholder="e.g., adventure, food, culture, nature, history" required>
+        </div>
+
+        <button type="submit" class="btn-generate">
+          <span class="btn-text">Generate Trip</span>
+          <span class="btn-icon">🚀</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- Loading Section -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>🤖 AI is crafting your perfect itinerary...</p>
+      <small>This may take a few seconds</small>
+    </div>
+
+    <!-- Results Section -->
+    <div class="result-section" id="resultSection">
+      <div class="result-header">
+        <h2>🎉 Your Travel Itinerary</h2>
+        <button class="btn-new" onclick="resetForm()">Plan Another Trip</button>
+      </div>
+      <div class="trip-plan" id="tripPlan"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
